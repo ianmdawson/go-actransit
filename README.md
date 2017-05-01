@@ -1,4 +1,4 @@
-# goactransit
+# go-actransit
 Simple library for interfacing with the Alameda Contra-Costa Transit api: http://api.actransit.org/
 
 Currently supports getting stops and getting stop next arrival predictions.

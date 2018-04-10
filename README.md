@@ -5,8 +5,17 @@ Currently supports getting stops and getting stop next arrival predictions.
 
 This is by no means complete (and is subject to changes for a while).
 
-## Install
+## Installation/cloning
+This assumes you have Go set up, the $GOPATH environment variable is defined, and that you [have dep](https://github.com/golang/dep) installed
 
 ```
 go get github.com/ianmdawson/go-actransit
+cd ${GOPATH}/src/github.com/ianmdawson/go-actransit
+make install-dependencies
+```
+
+## Tests
+
+```
+make test
 ```

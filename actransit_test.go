@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ianmdawson/go_server/config"
+	"github.com/ianmdawson/go-actransit/config"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -11,7 +11,7 @@ This assumes you have Go set up, the $GOPATH environment variable is defined, an
 ```
 go get github.com/ianmdawson/go-actransit
 cd ${GOPATH}/src/github.com/ianmdawson/go-actransit
-make install-dependencies
+make test # make sure everything is running as expected
 ```
 
 ## Tests

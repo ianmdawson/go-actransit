@@ -1,13 +1,8 @@
 .PHONY: dep test
 
-# install dependencies
+# update dependencies
 dep:
 	dep ensure
 
-install-dependencies: dep
-
 test:
-	go test -v --race ./...
-
-test:
-	go test -v --race ./...
+	go test -v -race ./...

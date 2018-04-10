@@ -19,3 +19,9 @@ make test # make sure everything is running as expected
 ```
 make test
 ```
+
+### Caveats
+
+The AC-Transit api can be a little flaky sometimes. For testing purposes, here are a couple of stop IDs I found that return predictions most of the times during the day:
+
+[58123, 52246]

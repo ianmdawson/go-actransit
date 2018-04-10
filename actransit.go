@@ -237,9 +237,3 @@ func GetPredictionsForStop(stopID string, apiURL string) (*Predictions, error) {
 
 	return &predictions, nil
 }
-
-// UsefulStops a list of StopIDs
-var UsefulStops = []uint16{
-	58123,
-	52246,
-}

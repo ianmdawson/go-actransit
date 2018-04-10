@@ -61,7 +61,7 @@ func TestHTTPClient_Success(t *testing.T) {
 	}
 }
 
-func TestHTTPClientErrorsIfServerErrors(t *testing.T) {
+func TestHTTPClient_ErrorsIfServerErrors(t *testing.T) {
 	s := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json; charset=utf-8")
 		w.WriteHeader(http.StatusNotFound)
@@ -79,7 +79,7 @@ func TestHTTPClientErrorsIfServerErrors(t *testing.T) {
 	}
 }
 
-func TestGetAllStopsErrorsIfServerErrors(t *testing.T) {
+func TestGetAllStops_ErrorsIfServerErrors(t *testing.T) {
 	setUp()
 	fakeResponse := `A valid API token is required to use the AC Transit API.`
 	s := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
@@ -102,7 +102,7 @@ func TestGetAllStopsErrorsIfServerErrors(t *testing.T) {
 	}
 }
 
-func TestGetAllStopsSuccess(t *testing.T) {
+func TestGetAllStops_Success(t *testing.T) {
 	setUp()
 	fakeResponse := []map[string]string{
 		map[string]string{

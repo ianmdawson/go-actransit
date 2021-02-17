@@ -1,8 +1,4 @@
-.PHONY: dep test
-
-# update dependencies
-dep:
-	dep ensure
+.PHONY: test
 
 test:
 	go test -v -race ./...

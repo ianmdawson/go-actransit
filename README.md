@@ -6,7 +6,7 @@ Currently supports getting stops and getting stop next arrival predictions.
 This is by no means complete (and is subject to changes for a while).
 
 ## Installation/cloning
-This assumes you have Go set up, the $GOPATH environment variable is defined, and that you [have dep](https://github.com/golang/dep) installed
+This assumes you have Go 1.13 or greater installed and the $GOPATH environment variable is defined
 
 ```
 go get github.com/ianmdawson/go-actransit
@@ -22,6 +22,7 @@ make test
 
 ### Caveats
 
-The AC-Transit api can be a little flaky sometimes. For testing purposes, here are a couple of stop IDs I found that return predictions most of the times during the day:
+The AC-Transit api can be a little flaky sometimes. For testing purposes, here are a couple of stop IDs I found that return predictions most of the time:
 
 [58123, 52246]
+
